@@ -1,0 +1,279 @@
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+  background: rgb(255 250 240 / 90%);
+  border-bottom: 1px solid #efd6ad;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 1.2rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.brand-logo {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 1px solid #e8d4b8;
+  flex-shrink: 0;
+}
+
+.brand-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.brand-subtitle {
+  color: #8a6643;
+  font-size: 0.72rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.nav a {
+  color: #5f3810;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.65rem;
+}
+
+.nav a.active {
+  background: #6f3f0b;
+  color: #fff;
+}
+
+.landing {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.25rem 1.25rem 6rem;
+}
+
+.hero,
+.page-intro {
+  background: linear-gradient(135deg, #fff6e8, #ffe6b5);
+  border-radius: 1.25rem;
+  padding: 2.25rem 1.25rem;
+  text-align: center;
+}
+
+.badge {
+  display: inline-block;
+  background: #59330a;
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.hero h1,
+.page-intro h1 {
+  margin: 1rem 0 0.5rem;
+  font-size: clamp(1.6rem, 4vw, 3.1rem);
+  color: #39210a;
+}
+
+.subtitle,
+.page-intro p {
+  max-width: 680px;
+  margin: 0 auto;
+  color: #5b442d;
+}
+
+.hero-actions {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.btn,
+.view-all {
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.7rem 1rem;
+  border-radius: 0.75rem;
+}
+
+.btn.primary {
+  background: #6f3f0b;
+  color: #fff;
+}
+
+.btn.secondary,
+.view-all {
+  border: 1px solid #6f3f0b;
+  color: #6f3f0b;
+}
+
+.highlights,
+.about-grid {
+  margin-top: 1.5rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #f0dcc0;
+  border-radius: 1rem;
+  padding: 1.15rem;
+}
+
+.card h2 {
+  margin: 0 0 0.6rem;
+  font-size: 1.1rem;
+}
+
+.products {
+  margin-top: 2rem;
+}
+
+.section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.section-head h2,
+.products h2 {
+  margin: 0;
+}
+
+.product-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.product {
+  background: #fffdf9;
+  border: 1px solid #ebd9bc;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.product img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.product-body {
+  padding: 1rem;
+}
+
+.product h3 {
+  margin: 0 0 0.5rem;
+  color: #2d1a09;
+}
+
+.price {
+  font-weight: 700;
+  color: #874f10;
+  margin-bottom: 0.5rem;
+}
+
+.contact {
+  margin-top: 2rem;
+  background: #2f1b08;
+  color: #fff6e8;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.contact h2 {
+  color: #fff;
+  margin-bottom: 0.6rem;
+}
+
+.contact-branches {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.contact-branches p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.contact-branches a {
+  color: #ffe6b5;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.contact-branches a:hover {
+  color: #fff;
+}
+
+.floating-actions {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  display: grid;
+  gap: 0.55rem;
+  z-index: 20;
+}
+
+.floating {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.65rem 0.85rem;
+  border-radius: 0.75rem;
+  text-align: center;
+}
+
+.floating.zalo {
+  background: #0f6fff;
+}
+
+.floating.facebook {
+  background: #0866ff;
+}
+
+@media (max-width: 780px) {
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 0.2rem;
+  }
+
+  .section-head {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .floating-actions {
+    right: 0.75rem;
+    left: 0.75rem;
+    bottom: 0.75rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
